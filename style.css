@@ -93,3 +93,260 @@ html, body {
     height: auto;
   }
 /* sign up style ends here */
+
+
+/* sideabar style*/
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.dashboard-sidebar {
+  width: 240px;
+  background-color: #375E7A;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dashboard-sidebar img {
+  width: 130px;
+  border-radius: 50%;
+  margin-bottom: -25px;
+}
+
+.dashboard-sidebar .user-info {
+  text-align: center;
+  color: #E8E8E8;
+}
+
+.dashboard-sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #E8E8E8;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 15px;
+  white-space: nowrap;
+  justify-content: flex-start;
+  text-align: left;
+  height: 40px;
+  line-height: 10px;
+  margin-top: 20px;
+}
+
+.nav-link .nav-icon {
+  width: 20px;
+  height: 30px;
+  object-fit: contain;
+  margin-bottom: 0px;
+  
+}
+
+.dashboard-sidebar .nav-link span {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.nav-link:hover {
+  background-color: #2f4f66;
+}
+
+/* sidebar style ends here */
+
+/* topbar style stars*/
+.dashboard-main {
+  flex: 1;
+}
+
+.dashboard-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.dashboard-topbar h2 {
+  padding-left: 20px;
+}
+
+.dashboard-topbar a {
+  background-color: #375E7A;
+  color: #E8E8E8;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.dashboard-topbar a:hover {
+  background-color: #2e4d67;
+}
+
+.dashboard-topbar span {
+  margin-right: 40px;
+  color: #375E7A;
+}
+
+/* grades style starts here */
+
+.grades-section {
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.grades-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grades-table th,
+.grades-table td {
+  padding: 16px 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.grades-table th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.grades-table tr:last-child td {
+  border-bottom: none;
+}
+
+.grades-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.filters {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start; 
+  margin-bottom: 20px;
+}
+
+.filters select,
+.filters button {
+  height: 35px;
+  padding: 0 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: #375E7A;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: normal;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.filters select {
+  flex: 1; 
+}
+
+.filters button {
+  flex-grow: 0; 
+  width: 200px; 
+  cursor: pointer;
+  margin-top: 0;
+}
+
+.filters button:hover {
+  background-color: #2C4F67; 
+}
+
+.save-btn {
+  margin-top: 35px;
+  padding: 10px 40px;
+  background-color: #375E7A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+.modal-icon img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.modal-content {
+  background-color: #375E7A !important;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+}
+.modal-content h2 {
+text-align: center;
+margin-top: -10px;
+font-weight: 500;
+}
+.modal-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.modal-buttons .yes {
+  background-color: #00B73A;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal-buttons .no {
+  background-color: #FF4B4B;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* grades style ends here */

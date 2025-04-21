@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduNotes Notimi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="dashboard-sidebar">
+      <div class="user-info">
+        <img src="img/logo.png" alt="User">
+        <p>Emri i perdoruesit<br><small>Roli</small></p>
+      </div>
+
+      <a href="dashboard.html" class="nav-link">
+        <img src="img/panelikryesor.png" class="nav-icon" alt="Paneli" />
+        <span>Paneli kryesor</span>
+      </a>
+
+      <a href="#" class="nav-link">
+        <img src="img/vendosnota.png" class="nav-icon" alt="Vendos Nota" />
+        <span>Vendos Nota</span>
+      </a>
+
+      <a href="comments.html" class="nav-link">
+        <img src="img/komentet.png" class="nav-icon" alt="Komentet" />
+        <span>Komentet</span>
+      </a>
+
+      <a href="njoftimet.html" class="nav-link">
+        <img src="img/njoftime.png" class="nav-icon" alt="Njoftime" />
+        <span>Njoftime</span>
+      </a>
+    </div>
+
+    <div class="dashboard-main">
+      <div class="dashboard-topbar">
+        <h2>EduNotes</h2>
+        <div>
+          <span>Përshendetje znj. Albana!</span>
+          <a href="signin.html">⇦ Dil</a>
+        </div>
+      </div>
+
+      <div class="grades-section">
+        <div class="filters">
+          <select>
+            <option>Zgjidh klasën</option>
+            <option>Klasa 1</option>
+            <option>Klasa 2</option>
+          </select>
+      
+          <select>
+            <option>Zgjidh lëndën</option>
+            <option>Gjuhë Shqipe</option>
+            <option>Matematikë</option>
+          </select>
+      
+          <button class="show-button">Shfaq</button>
+        </div>
+      
+        <table class="grades-table">
+          <thead>
+            <tr>
+              <th>Emri</th>
+              <th>Gjuhë Shqipe</th>
+              <th>Nota 1</th>
+              <th>Nota 2</th>
+              <th>Nota Përfundimtare</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Blendi Gashi</td>
+              <td>4</td>
+              <td>5</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Arta Berisha</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Ela Veseli</td>
+              <td>5</td>
+              <td>5</td>
+              <td>5</td>
+              <td>5</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <button id="openModalBtn" class="save-btn">Ruaj</button>
+      </div>
+
+      <!-- Popup Modal -->
+      <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-icon">
+            <img src="img/alert.png" alt="Alert" />
+          </div>
+          <h2>Vëmendje!</h2>
+          <p>Jeni të sigurt që dëshironi t’i ruani të dhënat?</p>
+          <div class="modal-buttons">
+            <button class="yes">PO</button>
+            <button class="no">JO</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
