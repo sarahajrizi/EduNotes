@@ -11,6 +11,109 @@ html, body {
   box-sizing: border-box/* Heq çdo skroll të përgjithshëm */
 }
 
+
+
+/* Sign in style starts here */
+.signin-section {
+  background-color: #E8E8E8;
+  height: 100vh;
+}
+
+.header-title {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  .signin-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  
+  
+  .signin-container {
+    padding: 30px 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  
+  h2 {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    width: 120px;
+    margin: 15px auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  label {
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  input::placeholder{
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #375E7A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+ 
+  }
+  
+  
+  button:hover {
+    background-color: #19567c;
+    transition: 0.4s;
+  }
+  
+  .register-text {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .register-text a {
+    color: #375E7A;
+    text-decoration: none;
+  }
+  
+  .register-text a:hover {
+    text-decoration: underline;
+  }
+  
+/*Sign in style ends here*/
+
+
+
+
 /* sign up style starts here */
 .signup-wrapper {
     display: flex;
