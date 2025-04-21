@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>EduNotes-Sign Up</title>
+</head>
+<body class="signup-page">
+  <div class="signup-wrapper">
+    <div class="container">
+      <h1 class="title">EduNotes</h1>
+      <img src="img/logo.png" alt="Logoja" class="logo"> 
+      
+      <form class="form">
+        <label for="name">Emri dhe Mbiemri:</label>
+        <input type="text" id="name" name="name" required placeholder="Shkruani emrin dhe mbiemrin tuaj">
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Shkruani emailin tuaj">
+  
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Shkruani passwordin tuaj">
+  
+        <label for="confirm-password">Konfirmo passwordin:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required placeholder="Konfirmo passwordin tuaj">
+  
+        <label for="role">Zgjidh rolin:</label>
+        <select id="role" name="role" required>
+          <option value="" disabled selected>Zgjidh rolin..</option>
+          <option value="prind">Prind</option>
+          <option value="mesues">Mësues</option>
+        </select>
+  
+        <button type="submit">Regjistrohu</button>
+      </form>
+  
+      <p class="login-link">Keni llogari? <a href="signin.html">Kyçu tani!</a></p>
+    </div>
+  </div>
+</body>
+</html>
