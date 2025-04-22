@@ -612,8 +612,6 @@ font-weight: 500;
 }
 
 
-
-
 .comments-table {
   width: 100%;
   border: 1px solid black; /* vetëm bordi i jashtëm */
@@ -702,4 +700,215 @@ font-weight: 500;
   padding: 10px 50px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+/* announcements starts here */
+.main-content {
+  flex: 1;
+  padding: 40px 60px;
+  background-color: #f4f4f4;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.notices {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.notice-card {
+  background-color: white;
+  border: 2.5px solid #375E7A;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.notice-card h3 {
+  margin: 0 0 5px;
+}
+
+.notice-card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content h3{
+  color: #375E7A;
+  font-size: 30px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.modal-content {
+  background-color: white !important;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.main-content h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #375E7A;
+  text-align: center;
+  font-weight: 500;
+}
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content label {
+  color: black;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.modal-content input,
+.modal-content textarea {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+.modal-content button[type="submit"] {
+  margin-top: 20px;
+  background-color: #375E7A;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #375E7A;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: medium;
+}
+
+#newNoticeBtn{
+  background-color: #375E7A;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/*sign in*/
+.header-title {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.signin-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.signin-container {
+  padding: 30px 40px;
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 120px;
+  margin: 15px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  text-align: left;
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+input::placeholder{
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #375E7A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+
+button:hover {
+  background-color: #19567c;
+  transition: 0.4s;
+}
+
+.register-text {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.register-text a {
+  color: #375E7A;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
 }
