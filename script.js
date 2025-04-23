@@ -1,25 +1,27 @@
+
 // grades Popup Modal
 document.addEventListener("DOMContentLoaded", () => {
-    const openModalBtn = document.getElementById("openModalBtn");
-    const modal = document.getElementById("confirmationModal");
-    const noBtn = document.querySelector(".modal-buttons .no");
-    const yesBtn = document.querySelector(".modal-buttons .yes");
+  const openModalBtn = document.getElementById("openModalBtn");
+  const modal = document.getElementById("confirmationModal");
+  const cancelBtn = document.querySelector(".custom-modal-actions .btn-cancel");
+  const confirmBtn = document.querySelector(".custom-modal-actions .btn-confirm");
 
-    modal.style.display = "none";
+  modal.style.display = "none";
 
-    openModalBtn.addEventListener("click", () => {
-      modal.style.display = "flex";
-    });
-
-    noBtn.addEventListener("click", () => {
-      modal.style.display = "none";
-    });
-
-    yesBtn.addEventListener("click", () => {
-      modal.style.display = "none";
-      alert("Të dhënat u ruajtën me sukses!");
-    });
+  openModalBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
   });
+
+  cancelBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  confirmBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    alert("Të dhënat u ruajtën me sukses!");
+  });
+});
+
 
   // Add event listener to the "Add Notice" button
   document.getElementById("newNoticeBtn").addEventListener("click", () => {
@@ -54,5 +56,3 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("noticeFormModal").classList.add("hidden");
     }
   });
-  
-  

@@ -645,7 +645,7 @@ font-weight: 500;
   font-weight: 300;
 }
 
-.modal {
+.custom-modal {
   display: none;
   position: fixed;
   z-index: 999;
@@ -653,17 +653,18 @@ font-weight: 500;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
 }
-.modal-icon img {
+
+.custom-modal-icon img {
   width: 80px;
   height: 80px;
   margin-bottom: 10px;
 }
 
-.modal-content {
+.custom-modal-content {
   background-color: #375E7A;
   color: white;
   padding: 20px;
@@ -671,20 +672,20 @@ font-weight: 500;
   text-align: center;
   width: 300px;
 }
-.modal-content h2 {
-text-align: center;
-margin-top: -10px;
-font-weight: 500;
+
+.custom-modal-content h2 {
+  text-align: center;
+  margin-top: -10px;
+  font-weight: 500;
 }
 
-
-.modal-buttons {
+.custom-modal-actions {
   margin-top: 10px;
   display: flex;
   justify-content: space-evenly;
 }
 
-.modal-buttons .yes {
+.custom-modal-actions .btn-confirm {
   background-color: #00B73A;
   color: white;
   border: none;
@@ -693,7 +694,7 @@ font-weight: 500;
   cursor: pointer;
 }
 
-.modal-buttons .no {
+.custom-modal-actions .btn-cancel {
   background-color: #FF4B4B;
   color: white;
   border: none;
@@ -701,6 +702,10 @@ font-weight: 500;
   border-radius: 8px;
   cursor: pointer;
 }
+
+
+
+
 
 /* announcements starts here */
 .main-content {
@@ -912,3 +917,98 @@ button:hover {
 .register-text a:hover {
   text-decoration: underline;
 }
+
+
+
+
+
+/*comments for parent style starts here*/
+.comments-filter {
+  display: flex;
+  align-items: center; 
+  gap: 1rem;
+  margin: 2rem 2.7rem 1rem;
+  flex-wrap: wrap;
+  padding: 0px;
+ 
+}
+
+
+.comments-filter select,
+.comments-filter button {
+height: 40px;
+margin-left: 40px;
+margin-right: 40px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  background-color: #375E7A;
+  color: white;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0; 
+  text-align: center;
+  flex: 1;
+}
+
+
+
+.comments-filter button {
+  background-color:#375E7A;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+  font-weight: 400;
+}
+
+.comments-filter button:hover {
+  background-color: #1a252f;
+}
+
+.comments-table {
+  width: 100%;
+  border-collapse: separate; 
+  border-spacing: 1px; 
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 30px auto;
+  border: none;
+  
+}
+
+.comments-table th,
+.comments-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.comments-table th {
+  background-color: white;
+  font-weight: 600;
+  
+}
+
+.comments-table tr:hover {
+  background-color: #f9f9f9;
+}
+.comments-table-wrapper {
+margin-left: 40px;
+margin-right: 40px;
+}
+/* comments for parent style ends here */
+
+
+
+
+
+
+
+
+
+

@@ -34,7 +34,7 @@
                 <span>Komentet</span>
               </a>
               
-              <a href="#" class="nav-link">
+              <a href="announcements.html" class="nav-link">
                 <img src="img/njoftime.png" class="nav-icon" alt="Njoftime" />
                 <span>Njoftime</span>
               </a>
@@ -115,44 +115,40 @@
 
 
 <!-- Popup Modal -->
-<div id="confirmationModal" class="modal">
-  <div class="modal-content">
-    <div class="modal-icon">
+<div id="confirmationModal" class="custom-modal">
+  <div class="custom-modal-content">
+    <div class="custom-modal-icon">
       <img src="img/alert.png" alt="Alert" />
     </div>
     <h2>Vëmendje!</h2>
     <p>Jeni të sigurt që dëshironi t’i ruani të dhënat?</p>
-    <div class="modal-buttons">
-      <button class="yes">PO</button>
-      <button class="no">JO</button>
+    <div class="custom-modal-actions">
+      <button class="btn-confirm">PO</button>
+      <button class="btn-cancel">JO</button>
     </div>
   </div>
 </div>
+
 <script>
   const openModalBtn = document.getElementById("openModalBtn");
   const modal = document.getElementById("confirmationModal");
-  const noBtn = document.querySelector(".modal-buttons .no");
-  const yesBtn = document.querySelector(".modal-buttons .yes");
+  const cancelBtn = document.querySelector(".custom-modal-actions .btn-cancel");
+  const confirmBtn = document.querySelector(".custom-modal-actions .btn-confirm");
 
   openModalBtn.addEventListener("click", () => {
     modal.style.display = "flex";
   });
 
-  noBtn.addEventListener("click", () => {
+  cancelBtn.addEventListener("click", () => {
     modal.style.display = "none";
   });
 
-  yesBtn.addEventListener("click", () => {
+  confirmBtn.addEventListener("click", () => {
     modal.style.display = "none";
-    // vendos funksionin për ruajtjen këtu
     alert("Të dhënat u ruajtën me sukses!");
   });
 </script>
-
-
-
-            
-          </div>          
-      </div>
+</div>          
+</div>
 </body>
 </html>
