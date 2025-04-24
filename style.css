@@ -1291,3 +1291,68 @@ border-radius: 10px;
   padding-left: 10px;
 }
 
+
+
+
+/*manage-teachers style starts here*/
+.teacher-management {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teacher-management h3 {
+  margin-top: 5px;
+  font-size: 22px;
+  color: #333;
+}
+
+.add-button {
+  background-color: #375E7A;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  margin-top: -20px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.add-button i {
+  margin-right: 5px;
+}
+
+.teachers-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.teachers-table th,
+.teachers-table td {
+  padding: 20px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.teachers-table th {
+  background-color: white;
+}
+
+.edit {
+  color: #2c7be5;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.delete {
+  color: #e74c3c;
+  text-decoration: none;
+}

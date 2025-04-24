@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduNotes | Manage Teachers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+
+        <div class="dashboard-sidebar">
+            <div class="user-info">
+              <img src="img/logo.png" alt="User">
+              <p>Emri i perdoruesit<br><small>Roli</small></p>
+            </div>
+          
+            <a href="dashboard.html" class="nav-link ">
+                <img src="img/panelikryesor.png" class="nav-icon" alt="Paneli" />
+                <span>Paneli kryesor</span>
+              </a>
+              
+              <a href="grades.html" class="nav-link ">
+                <img src="img/manage teachers.png" class="nav-icon" alt="Vendos Nota" />
+                <span>Menaxho Mësuesit</span>
+              </a>
+              
+              <a href="comments.html" class="nav-link">
+                <img src="img/manage students.png" class="nav-icon" alt="Komentet" />
+                <span>Menaxho Nxënësit</span>
+              </a>
+              
+              <a href="#" class="nav-link ">
+                <img src="img/arcticons_classroom.png" class="nav-icon" alt="Njoftime" />
+                <span>Klasat dhe Lëndët</span>
+              </a>
+              
+              <a href="#" class="nav-link ">
+                <img src="img/njoftime.png" class="nav-icon" alt="Njoftime" />
+                <span>Njoftime</span>
+              </a>
+          </div>
+          
+      
+          <div class="dashboard-main">
+            <div class="dashboard-topbar">
+              <h2>EduNotes</h2>
+              <div>
+                <span>Përshendetje znj. Albana!</span>
+                <a href="signin.html">⇦ Dil</a>
+              </div>
+            </div>
+
+            <div class="teacher-management">
+                <h3>Menaxho Mësuesit</h3>
+                <button class="add-button">Shto mësues <i class="fas fa-plus"></i> </button>
+              
+                <table class="teachers-table">
+                  <thead>
+                    <tr>
+                      <th>Emri</th>
+                      <th>Email</th>
+                      <th>Klasë/Lëndë</th>
+                      <th>Veprime</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Blerta Halimi</td>
+                      <td>blerta.halimi@example.com</td>
+                      <td>English</td>
+                      <td><a href="#" class="edit">Edito</a> <a href="#" class="delete">Fshije</a></td>
+                    </tr>
+                    <tr>
+                      <td>Edon Dobra</td>
+                      <td>edon.dobra@example.com</td>
+                      <td>6</td>
+                      <td><a href="#" class="edit">Edito</a> <a href="#" class="delete">Fshije</a></td>
+                    </tr>
+                    <tr>
+                      <td>Tuna Thaçi</td>
+                      <td>tuna.thaci@example.com</td>
+                      <td>Matematika</td>
+                      <td><a href="#" class="edit">Edito</a> <a href="#" class="delete">Fshije</a></td>
+                    </tr>
+                    <tr>
+                      <td>Agron Berisha</td>
+                      <td>agron.berisha@example.com</td>
+                      <td>Klasa 5</td>
+                      <td><a href="#" class="edit">Edito</a> <a href="#" class="delete">Fshije</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>              
+              
+
+        </div>          
+    </div>   
+</body>
+</html>
