@@ -1057,3 +1057,237 @@ margin-right: 40px;
   height: 450px;
 }
 /*teacher-dashboard for parent style ends here*/
+/* director-dashboard starts here */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #E8E8E8;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.dashboard-sidebar {
+  width: 240px;
+  background-color: #375E7A;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dashboard-sidebar img {
+  width: 130px;
+  border-radius: 50%;
+  margin-bottom: -25px;
+}
+
+.dashboard-sidebar .user-info {
+  text-align: center;
+  color: #E8E8E8;
+}
+
+.dashboard-sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #E8E8E8;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 15px;
+  white-space: nowrap;
+  justify-content: flex-start;
+  text-align: left;
+  height: 40px;
+  line-height: 10px;
+  margin-top: 20px;
+}
+
+.nav-link .nav-icon {
+  width: 20px;
+  height: 30px;
+  object-fit: contain;
+  margin-bottom: 0px;
+  
+}
+
+.dashboard-sidebar .nav-link span {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.nav-link:hover {
+  background-color: #2f4f66;
+}
+
+/* sidebar style ends here */
+
+/* topbar style stars*/
+.dashboard-main {
+  flex: 1;
+}
+
+.dashboard-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.dashboard-topbar h2 {
+  padding-left: 20px;
+}
+
+.dashboard-topbar a {
+  background-color: #375E7A;
+  color: #E8E8E8;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.dashboard-topbar a:hover {
+  background-color: #2e4d67;
+}
+
+.dashboard-topbar span {
+  margin-right: 40px;
+  color: #375E7A;
+}
+
+.dashboard-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  margin: 20px;
+}
+
+
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #e3edf7;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  background-color: #375E7A;
+}
+
+.card:hover h3 {
+  color: #E8E8E8;
+}
+
+.card:hover p {
+  color: #E8E8E8;
+}
+  
+.card h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e1e1e;
+}
+
+.card p {
+  margin: 0;
+  color: #555;
+  font-size: 15px;
+}
+
+.card.active {
+  background-color: #375E7A;
+  color: #E8E8E8;
+}
+
+.card.active h3 {
+  color: #E8E8E8;
+}
+.card.active p {
+  color: #E8E8E8;
+}
+
+
+.dashboard-bottom {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Lejon që përmbajtja të kalojë në rreshtin tjetër */
+  overflow-x: hidden;
+}
+
+.chart, .notifications {
+min-width: 300px; /* Siguron që në ekran të ngushtë të mos thyhen */
+flex: 1 1 300px;   /* Përshtaten sipas hapësirës */
+box-sizing: border-box;
+border: 1px solid #ddd;
+border-radius: 10px;
+}
+
+.chart img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.chart h4,
+.notifications h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2c3e50; /* pak më e errët se #333 për elegancë */
+  letter-spacing: 0.3px;
+  padding-left: 30px;
+}
+
+.notifications ul {
+  list-style: disc inside;
+  padding-left: 0;
+}
+
+.notifications li {
+  margin-bottom: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.6;
+  padding-left: 10px;
+}
+
