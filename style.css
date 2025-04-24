@@ -1003,12 +1003,57 @@ margin-right: 40px;
 }
 /* comments for parent style ends here */
 
+/*teacher-dashboard for parent style starts here*/
 
+.student-dropdown {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-start;   
+  padding-left: 60px;            
+  font-family: 'Poppins', sans-serif;
+}
 
+.student-dropdown select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 
+  background-color: #375E7A;     
+  color: #fff;                   
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="12" viewBox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 30px;
+  transition: background-color 0.3s ease;
+}
 
+.student-dropdown select:hover {
+  background-color: #375E7A;
+}
 
+.student-dropdown select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
 
-
-
+.notat-img {
+  padding-left: 40px;
+  padding-bottom: 30px;
+  width: 10px;
+  height: 10px; 
+  object-fit: contain; 
+}
+.notat-img img{
+  width: 850px;
+  height: 450px;
+}
+/*teacher-dashboard for parent style ends here*/
