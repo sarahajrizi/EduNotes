@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduNotes Njoftime</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-sidebar">
+            <div class="user-info">
+              <img src="img/logo.png" alt="User">
+              <p>Emri i perdoruesit<br><small>Roli</small></p>
+            </div>
+          
+            <a href="dashboard.html" class="nav-link ">
+                <img src="img/panelikryesor.png" class="nav-icon" alt="Paneli" />
+                <span>Paneli kryesor</span>
+              </a>
+              
+              <a href="grades.html" class="nav-link ">
+                <img src="img/vendosnota.png" class="nav-icon" alt="Vendos Nota" />
+                <span>Vendos Nota</span>
+              </a>
+              
+              <a href="comments.html" class="nav-link">
+                <img src="img/komentet.png" class="nav-icon" alt="Komentet" />
+                <span>Komentet</span>
+              </a>
+              
+              <a href="announcements.html" class="nav-link">
+                <img src="img/njoftime.png" class="nav-icon" alt="Njoftime" />
+                <span>Njoftime</span>
+              </a>
+              
+          </div>
+          
+      
+          <div class="dashboard-main">
+            <div class="dashboard-topbar">
+              <h2>EduNotes</h2>
+              <div>
+                <span>Përshendetje znj. Albana!</span>
+                <a href="signin.html">⇦ Dil</a>
+              </div>
+            </div>
+
+            <div class="main-content" >
+                <main>
+                  <button id="newNoticeBtn">Krijo një njoftim të ri <span>+</span></button>
+                  <h2>Njoftimet e vjetra:</h2>
+                  <div class="notices" id="noticesContainer">
+                  </div>
+                </main>
+              </div>
+          
+              <div id="noticeFormModal" class="modal hidden">
+                <div class="modal-content">
+                  <h3>Krijo një njoftim të ri</h3>
+                  <form id="noticeForm">
+                    <label for="title">Titulli:</label>
+                    <input type="text" id="title" required>
+          
+                    <label for="date">Data:</label>
+                    <input type="date" id="date" required>
+          
+                    <label for="description">Përshkrimi:</label>
+                    <textarea id="description" rows="5" required></textarea>
+          
+                    <label for="author">Autori:</label>
+                    <input type="text" id="author" required>
+          
+                    <button type="submit">Ruaj</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          
+          
+
+        </div>          
+    </div>
+
+<script src="script.js"></script>
+    
+</body>
+</html>
