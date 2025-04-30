@@ -1003,7 +1003,7 @@ margin-right: 40px;
 }
 /* comments for parent style ends here */
 
-/*teacher-dashboard for parent style starts here*/
+/*student-grades for parent style starts here*/
 
 .student-dropdown {
   margin: 20px 0;
@@ -1056,7 +1056,7 @@ margin-right: 40px;
   width: 850px;
   height: 450px;
 }
-/*teacher-dashboard for parent style ends here*/
+/*student-grades for parent style ends here*/
 /* director-dashboard starts here */
 body {
   font-family: 'Poppins', sans-serif;
@@ -1541,4 +1541,75 @@ height: 230px;
   padding-left: 20px;
   font-size: 14px;
   line-height: 2;
+}
+/* manage-students style start here*/
+
+.title-and-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 60px;
+}
+
+.shto-nxenes-btn {
+  background-color: #3b6c85; 
+  color: white;
+  padding: 4px 10px; 
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px; 
+  margin: 0; 
+  transition: background-color 0.3s ease;
+}
+
+.shto-nxenes-btn:hover {
+  background-color: #345e75; /* efekt hover */
+}
+
+.dropdown-wrapper {
+  display: flex;
+  gap: 10px;
+  margin: 10px 60px;
+}
+
+.custom-dropdown {
+  background-color: #3b6c85; 
+  color: white;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  height: 32px; 
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.custom-dropdown option {
+  color: black; 
+}
+.custom-dropdown option {
+  background-color: white;
+  color: #333;
+}
+
+.nxenesit-img {
+  padding-left: 60px; 
+  padding-bottom: 50px; 
+  width: 85%; 
+  display: block; 
+  text-align: left; 
+}
+
+.nxenesit-img img {
+  width: 82%; 
+  height: auto; 
+  object-fit: cover; 
 }
