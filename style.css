@@ -1615,6 +1615,7 @@ height: 230px;
 }
 
 /* parent-announcements */ 
+
 .notifications-container {
   display: flex;
   flex-wrap: wrap;
@@ -1628,8 +1629,10 @@ height: 230px;
   border: 1px solid #d1d1d1;
   border-radius: 10px;
   width: 300px;
+  height: 230px; /* ketu lartesin mund te ja nderrojm sipas deshires */
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow-y: auto; 
   transition: transform 0.2s ease;
 }
 
@@ -1661,5 +1664,105 @@ height: 230px;
   font-weight: 600;
   font-size: 13px;
   color: #222;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3e50; /* Kaltër e errët profesionale */
+  border-bottom: 2px solid #3498db; /* Vijë poshtë me ngjyrë blu të theksuar */
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* parent announcements style ends here */
+
+/* director-class&grades style starts here */
+.dashboard-content {
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.add-class-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.add-class-btn:hover {
+  background-color: #45a049;
+}
+
+.subject-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.subject-table th, .subject-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.subject-table th {
+  background-color: #f2f2f2;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  width: 50%;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.save-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.save-btn:hover {
+  background-color: #45a049;
 }
 
