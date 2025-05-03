@@ -1613,3 +1613,53 @@ height: 230px;
   height: auto; 
   object-fit: cover; 
 }
+
+/* parent-announcements */ 
+.notifications-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: flex-start;
+}
+
+.notification-card {
+  background-color: #ffffff;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.notification-card:hover {
+  transform: translateY(-5px);
+}
+
+.notification-card h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.notification-card .date {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.notification-card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.notification-card .author {
+  font-weight: 600;
+  font-size: 13px;
+  color: #222;
+}
+
