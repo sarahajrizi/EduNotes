@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EduNotes Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <title>EduNotes | Your Child's Comments</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +36,7 @@
               
               <a href="parent-announcements.html" class="nav-link ">
                 <img src="img/njoftime.png" class="nav-icon" alt="Njoftime" />
-                <span>Njoftime</span>
+                <span>Njoftimet</span>
               </a>
               
           </div>
@@ -50,45 +50,34 @@
                 <a href="signin.html">⇦ Dil</a>
               </div>
             </div>
-          
-            <div class="dashboard-cards">
-              <div class="dashboard-card full-width">
-                <div class="dashboard-title">Të dhënat kryesore</div>
-                <div class="profile-info">
-                  <img src="img/parentprofile.png" alt="Teacher">
-                  <div class="profile-info-text">
-                    Prindi: Agron Pllana<br>
-                    Nxënësi: Mal Pllana<br>
-                    Klasa: 3<br>
-                    Paralelja: 2
+
+            <div class="dashboard-content">
+                <h3 class="section-title">Njoftimet:</h3>
+                <div class="notifications-container">
+              
+                  <!-- Njoftimi 1 -->
+                  <div class="notification-card">
+                    <h4>Test në lëndën Gjuhë Shqipe</h4>
+                    <p class="date">02.04.2025</p>
+                    <p>Njofotohen prindërit se fëmijët do të kenë test në lëndën "Gjuhë Shqipe" më datë 03.04.2025. Ju lutem të përgatiten për testin nga kapitulli 1 deri tek kapitulli i 5-të.</p>
+                    <p class="author"><strong>Mësuesja Albana Pllana</strong></p>
                   </div>
+              
+                  <!-- Njoftimi 2 -->
+                  <div class="notification-card">
+                    <h4>Ekskursionit Shkollor</h4>
+                    <p class="date">05.03.2025</p>
+                    <p>Ju njoftojmë se më [06.03.2025], nxënësit e shkollës do të marrin pjesë në një ekskursion shkollor edukativ në qytetin e Ulqinit.</p>
+                    <p class="author"><strong>Drejtori Agron Pllana</strong></p>
+                  </div>
+              
+                  <!-- Shto më shumë njoftime këtu sipas nevojës -->
+              
                 </div>
               </div>
-            
-              <div class="dashboard-card-row">
-                <div class="dashboard-card">
-                  <div class="dashboard-title">Statistika</div>
-                  <div class="stats-list">
-                    <img src="img/pencil.png" class="icon"/><span>Nota të plotësuara:</span>
-                    <span class="number">10</span><br>
-                    <img src="img/pencil.png" class="icon"/><span>Nota të paplotësuara: </span>
-                    <span class="number">10</span><br>
-                    <img src="img/comment.png" class="icon"/><span>Komente </span>
-                    <span class="number">20</span><br>
-                  </div>
-                </div>
-            
-                <div class="dashboard-card">
-                  <div class="dashboard-title">Njoftime</div>
-                  <ul class="notifications-list">
-                    <li>Pushim për nder të Fitër Bajramit</li>
-                    <li>Pushimi pranveror fillon nga data 05.04.2025</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-          </div>          
-      </div>
+              
+
+                   
+    </div> 
 </body>
 </html>

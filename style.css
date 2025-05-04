@@ -1613,4 +1613,110 @@ height: 230px;
   height: auto; 
   object-fit: cover; 
 }
+
 /*manage students style ends here*/
+
+/* parent-announcements */ 
+
+.notifications-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: flex-start;
+}
+
+.notification-card {
+  background-color: #ffffff;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  width: 300px;
+  height: 230px; /* ketu lartesin mund te ja nderrojm sipas deshires */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow-y: auto; 
+  transition: transform 0.2s ease;
+}
+
+.notification-card:hover {
+  transform: translateY(-5px);
+}
+
+.notification-card h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.notification-card .date {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.notification-card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.notification-card .author {
+  font-weight: 600;
+  font-size: 13px;
+  color: #222;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3e50; /* Kaltër e errët profesionale */
+  border-bottom: 2px solid #3498db; /* Vijë poshtë me ngjyrë blu të theksuar */
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* parent announcements style ends here */
+
+/* director-class&grades style starts here */
+.dashboard-content {
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.add-class-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.add-class-btn:hover {
+  background-color: #45a049;
+}
+
+.subject-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.subject-table th, .subject-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.subject-table th {
+  background-color: #f2f2f2;
+}
+
