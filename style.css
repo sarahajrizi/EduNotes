@@ -1687,3 +1687,139 @@ height: 230px;
 
 
 
+
+
+
+
+/*manage classes&subjects style starts here*/
+.content-section {
+  display: flex;
+  gap: 40px;
+  padding: 10px;
+  flex-wrap: wrap;  /* Siguron që seksionet të bëhen responsive */
+}
+.content-wrapper{
+  padding: 10px;
+}
+.content-wrapper h2 {
+  margin-top: 10px; 
+  margin-left: 0; 
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #2b5d85;
+  color: white;
+  padding: 8px 40px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: left;
+  margin-top: -20px;
+}
+
+.button-container {
+  display: flex;
+  gap: 340px;  /* Ndrysho hapësirën për butonat */
+  justify-content: flex-start;
+  flex-wrap: wrap;  /* Siguron që butonët të rreshtohen në mënyrë të përshtatshme */
+}
+
+.table-container {
+  margin-top: 10px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #f2f2f2;
+}
+
+/* Popup për Shto Klasë dhe Shto Lëndë */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #DBE6EE;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.3s ease-out;
+  font-weight: 500  ;
+}
+.popup-content h3{
+  color: #375E7A;
+  font-weight: 500;
+}
+
+
+.popup-content input {
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+.popup-content label{
+  padding: -20px;
+}
+
+.popup-content button {
+  background-color: #2b5d85;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+}
+
+.popup-content button:hover {
+  background-color: #1d4f6b;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:hover {
+  color: #2b5d85;
+}

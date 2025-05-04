@@ -8,61 +8,295 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="dashboard-container">
-        <div class="dashboard-sidebar">
-            <div class="user-info">
-              <img src="img/logo.png" alt="User">
-              <p>Emri i perdoruesit<br><small>Roli</small></p>
-            </div>
-          
-            <a href="director-dashboard.html" class="nav-link ">
-                <img src="img/panelikryesor.png" class="nav-icon" alt="Paneli" />
-                <span>Paneli kryesor</span>
-              </a>
-              
-              <a href="manage-teachers.html" class="nav-link ">
-                <img src="img/menaxhomesuesit.png" class="nav-icon" alt="Menaxho Mësuesit" />
-                <span>Menaxho Mësuesit</span>
-              </a>
-              
-              <a href="manage-students.html" class="nav-link">
-                <img src="img/Menaxho Nxënësit.png" class="nav-icon" alt="Menaxho Nxënësit" />
-                <span>Menaxho Nxënësit</span>
-              </a>
-              
-              <a href="director-class&subjects.html" class="nav-link ">
-                <img src="img/klasatdhelendet.png" class="nav-icon" alt="Klasat dhe Lëndët" />
-                <span>Klasat dhe Lëndët</span>
-              </a>
+  <div class="dashboard-container">
+    <div class="dashboard-sidebar">
+      <div class="user-info">
+        <img src="img/logo.png" alt="Logo i EduNotes" />
+        <p>Emri i përdoruesit<br><small>Roli</small></p>
+      </div>
+    
+      <a href="director-dashboard.html" class="nav-link ">
+        <img src="img/panelikryesor.png" class="nav-icon" alt="Paneli kryesor" />
+        <span>Paneli kryesor</span>
+      </a>
 
-              <a href="director-announcements.html" class="nav-link ">
-                <img src="img/njoftime.png" class="nav-icon" alt="Njoftime" />
-                <span>Njoftime</span>
-              </a>
-              
-          </div>
-          
-      
-          <div class="dashboard-main">
-            <div class="dashboard-topbar">
-              <h2>EduNotes</h2>
-              <div>
-                <span>Përshendetje znj. Albana!</span>
-                <a href="signin.html">⇦ Dil</a>
-              </div>
-            </div>
+      <a href="manage-teachers.html" class="nav-link ">
+        <img src="img/menaxhomesuesit.png" class="nav-icon" alt="Menaxho Mësuesit" />
+        <span>Menaxho Mësuesit</span>
+      </a>
 
-            
-          
-          
+      <a href="manage-students.html" class="nav-link">
+        <img src="img/manage students.png" class="nav-icon" alt="Menaxho Nxënësit" />
+        <span>Menaxho Nxënësit</span>
+      </a>
 
-        </div>          
+      <a href="director-class&subjects.html" class="nav-link ">
+        <img src="img/klasatdhelendet.png" class="nav-icon" alt="Klasat dhe Lëndët" />
+        <span>Klasat dhe Lëndët</span>
+      </a>
+
+      <a href="director-announcements.html" class="nav-link ">
+        <img src="img/njoftime.png" class="nav-icon" alt="Njoftime" />
+        <span>Njoftime</span>
+      </a>
     </div>
 
-<script src="script.js"></script>
+    <div class="dashboard-main">
+      <div class="dashboard-topbar">
+        <h2>EduNotes</h2>
+        <div>
+          <span>Përshëndetje znj. Albana!</span>
+          <a href="signin.html">⇦ Dil</a>
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        <h2 style="margin-bottom: 30px;">Klasat dhe Lëndët</h2>
+
+        <!-- Butonat -->
+        <div class="button-container">
+          <button class="btn" id="addClassBtn">Shto klasë +</button>
+          <button class="btn" id="addSubjectBtn">Shto lëndë +</button>
+        </div>
+
+        <!-- Seksioni për Klasat dhe Lëndët -->
+        <div class="content-section">
+          <!-- Seksioni për Klasat -->
+        <div style="flex: 1;">
+  <div class="table-container">
+    <table class="data-table" id="klasaTable">
+      <thead>
+        <tr>
+          <th>Klasa</th>
+          <th>Paraleja</th>
+          <th>Mësuesja</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Klasa 1</td>
+          <td>1</td>
+          <td>Albana Pllana</td>
+        </tr>
+        <tr>
+          <td>Klasa 2</td>
+          <td>1</td>
+          <td>Blerta Kastrati</td>
+        </tr>
+        <tr>
+          <td>Klasa 3</td>
+          <td>1</td>
+          <td>Esma Zeka</td>
+        </tr>
+        <tr>
+          <td>Klasa 4</td>
+          <td>1</td>
+          <td>Dhurata Neziri</td>
+        </tr>
+        <tr>
+          <td>Klasa 5</td>
+          <td>1</td>
+          <td>Valbona Jashari</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+        <!-- Seksioni për Lëndët -->
+<div style="flex: 1;">
+  <div class="table-container">
+    <table class="data-table" id="subjectTable">
+      <thead>
+        <tr>
+          <th>Emri i Lëndës</th>
+          <th>Klasa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gjuhë Shqipe</td>
+          <td>Klasa 1</td>
+        </tr>
+        <tr>
+          <td>Matematikë</td>
+          <td>Klasa 2</td>
+        </tr>
+        <tr>
+          <td>Edukatë Fizike</td>
+          <td>Klasa 1</td>
+        </tr>
+        <tr>
+          <td>Art Figurativ</td>
+          <td>Klasa 2</td>
+        </tr>
+        <tr>
+          <td>Shoqëria dhe Mjedisi</td>
+          <td>Klasa 3</td>
+        </tr>
+        <tr>
+          <td>Art Muzikor</td>
+          <td>Klasa 5</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup për Shto Klasë -->
+  <div class="popup" id="classPopup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('classPopup')">&times;</span>
+      <h3>Shto Klasë</h3>
+      <label for="classNumber">Zgjidh Klasën:</label>
+      <select id="classNumber">
+        <option value="">Zgjidh një klasë</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      
+      </select>
+      
+      <label for="classParallel">Zgjidh Paralele:</label>
+      <select id="classParallel">
+        <option value="">Zgjidh një paralele</option>
+        <option value="A">1</option>
+        <option value="B">2</option>
+        <option value="C">3</option>
+        <option value="D">4</option>
+      </select>
+      
+      <label for="classTeacher">Zgjidh Mësuesin:</label>
+      <select id="classTeacher">
+        <option value="">Zgjidh një mësues</option>
+        <option value="Albana Pllana">Albana Pllana</option>
+        <option value="Nafije Lahu">Nafije Lahu</option>
+        <option value="Nadire Hajrizi">Nadire Hajrizi</option>
+        <option value="Florim Berisha">Florim Berisha</option>
+        <option value="Valdete Berisha">Valdete Berisha</option>
+      </select>
+      <button class="btn" id="saveClassBtn">Ruaj</button>
+    </div>
+  </div>
+
+  <!-- Popup për Shto Lëndë -->
+  <div class="popup" id="subjectPopup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('subjectPopup')">&times;</span>
+      <h3>Shto Lëndë</h3>
+      
+      <label for="subjectName" class="popup-label">Zgjidh Lëndën:</label>
+      <select id="subjectName" class="popup-select">
+        <option value="">Zgjidh një lëndë</option>
+        <option value="Gjuhë Shqipe">Gjuhë Shqipe</option>
+        <option value="Matematikë">Matematikë</option>
+        <option value="Histori">Histori</option>
+        <option value="Gjeografi">Gjeografi</option>
+        <option value="Fizikë">Fizikë</option>
+        <option value="Kimi">Kimi</option>
+     
+      </select>
+      
+      <label for="subjectClass" class="popup-label">Zgjidh Klasën:</label>
+      <select id="subjectClass" class="popup-select">
+        <option value="">Zgjidh një klasë</option>
+        <option value="1">Klasa 1</option>
+        <option value="2">Klasa 2</option>
+        <option value="3">Klasa 3</option>
+        <option value="4">Klasa 4</option>
+        <option value="5">Klasa 5</option>
+       
+      </select>
+      
+      <button class="btn" id="saveSubjectBtn">Ruaj</button>
+    </div>
+</div>
+  <script>
+ // Funksionet për menaxhimin e popup-ve
+ function openPopup(id) {
+      document.getElementById(id).style.display = "flex";
+      document.body.style.overflow = "hidden";
+    }
     
+    function closePopup(id) {
+      document.getElementById(id).style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+    
+    // Event listeners për butonat e popup-ve
+    document.getElementById('addClassBtn').addEventListener('click', function() {
+      openPopup('classPopup');
+    });
+    
+    document.getElementById('addSubjectBtn').addEventListener('click', function() {
+      openPopup('subjectPopup');
+    });
+    
+    // Event listener për ruajtjen e klasës
+    document.getElementById('saveClassBtn').addEventListener('click', function() {
+      const className = document.getElementById('className').value;
+      const parallel = document.getElementById('classParallel').value;
+      const teacherName = document.getElementById('classTeacher').value;
+      
+      if (className && parallel && teacherName) {
+        const classTable = document.getElementById('klasaTable').getElementsByTagName('tbody')[0];
+        const newRow = classTable.insertRow();
+        
+        newRow.insertCell(0).textContent = className;
+        newRow.insertCell(1).textContent = parallel;
+        newRow.insertCell(2).textContent = teacherName;
+        
+        // Pastro inputet
+        document.getElementById('className').value = '';
+        document.getElementById('classParallel').value = '';
+        document.getElementById('classTeacher').value = '';
+        
+        // Mbyll popup-in
+        closePopup('classPopup');
+      } else {
+        alert('Ju lutem plotësoni të gjitha fushat!');
+      }
+    });
+    
+    // Event listener për ruajtjen e lëndës
+    document.getElementById('saveSubjectBtn').addEventListener('click', function() {
+      const subjectName = document.getElementById('subjectName').value;
+      const className = document.getElementById('subjectClass').value;
+      
+      if (subjectName && className) {
+        const subjectTable = document.getElementById('subjectTable').getElementsByTagName('tbody')[0];
+        const newRow = subjectTable.insertRow();
+        
+        newRow.insertCell(0).textContent = subjectName;
+        newRow.insertCell(1).textContent = className;
+        
+        // Pastro inputet
+        document.getElementById('subjectName').value = '';
+        document.getElementById('subjectClass').value = '';
+        
+        // Mbyll popup-in
+        closePopup('subjectPopup');
+      } else {
+        alert('Ju lutem plotësoni të gjitha fushat!');
+      }
+    });
+    
+    // Mbyll popup-in kur klikohet jashtë tij
+    window.addEventListener('click', function(event) {
+      if (event.target.classList.contains('popup')) {
+        closePopup(event.target.id);
+      }
+    });
+  </script>
+
+  </script>
 </body>
 </html>
