@@ -92,21 +92,6 @@ html, body {
     transition: 0.4s;
   }
   
-  .register-text {
-    margin-top: 20px;
-    font-weight: 500;
-    font-size: 14px;
-  }
-  
-  .register-text a {
-    color: #375E7A;
-    text-decoration: none;
-  }
-  
-  .register-text a:hover {
-    text-decoration: underline;
-  }
-  
 /*Sign in style ends here*/
 
 /* dashboard style starts here */
@@ -310,150 +295,6 @@ height: 230px;
   color: #375E7A;
 }
 
-
-/* grades style ends here */
-
-
-
-/*comments style starts here*/
-.comments-section {
-  padding-top: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.filters {
-  display: flex;
-  gap: 40px; /* Hapësirë mes elementeve */
-  align-items: center; /* Siguron që të jenë në të njëjtin nivel vertikal */
-  margin-bottom: 20px;
-}
-
-.filters select,
-.filters button {
-  height: 35px;
-  padding: 0 20px;
-  font-size: 14px;
-  border-radius: 5px;
-  border: none;
-  background-color: #375E7A;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: normal;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-}
-
-.filters select {
-  flex: 1; /* Siguron që select të mbushë hapësirën në mënyrë të barabartë */
-}
-
-.filters button {
-  flex-grow: 0; /* Butoni nuk do të rritet për të mbushur hapësirën */
-  width: 200px; /* Butoni do të ketë lartësinë dhe gjerësinë e duhur */
-  cursor: pointer;
-}
-
-.filters button:hover {
-  background-color: #2C4F67; /* Ndryshim ngjyre në hover për butonin */
-}
-
-
-.comments-table {
-  width: 100%;
-  border: 1px solid black; /* vetëm bordi i jashtëm */
-  border-collapse: separate; /* ndarë që mos të bashkohen me brendësinë */
-  border-spacing: 0; /* pa hapësira ndërmjet qelizave */
-  background-color: white;
-  margin-top: 30px;
-}
-
-.comments-table th,
-.comments-table td {
-  border: 1px solid #ddd; 
-  padding: 20px;
-  text-align: left;
-}
-
-.comments-table th {
-  background-color: white;
-}
-
-
-.save-btn {
-  margin-top: 35px;
-  padding: 10px 40px;
-  background-color: #375E7A;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-}
-
-.custom-modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
-}
-
-.custom-modal-icon img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 10px;
-}
-
-.custom-modal-content {
-  background-color: #375E7A;
-  color: white;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-  width: 300px;
-}
-
-.custom-modal-content h2 {
-  text-align: center;
-  margin-top: -10px;
-  font-weight: 500;
-}
-
-.custom-modal-actions {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.custom-modal-actions .btn-confirm {
-  background-color: #00B73A;
-  color: white;
-  border: none;
-  padding: 10px 50px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.custom-modal-actions .btn-cancel {
-  background-color: #FF4B4B;
-  color: white;
-  border: none;
-  padding: 10px 50px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
 /* announcements starts here */
 .main-content {
   flex: 1;
@@ -577,76 +418,6 @@ button {
   cursor: pointer;
   margin-bottom: 20px;
   font-weight: 500;
-}
-
-/*sign in*/
-.header-title {
-  position: absolute;
-  top: 20px;
-  left: 30px;
-  font-size: 24px;
-  font-weight: bold;
-}
-.signin-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-
-.signin-container {
-  padding: 30px 40px;
-  border-radius: 10px;
-  text-align: center;
-  width: 350px;
-}
-
-h2 {
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-.logo {
-  width: 120px;
-  margin: 15px auto;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-label {
-  text-align: left;
-  margin-top: 10px;
-}
-
-input {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-input::placeholder{
-  font-family: 'Poppins', sans-serif;
-}
-
-button {
-  margin-top: 15px;
-  padding: 10px;
-  background-color: #375E7A;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-
-}
-
-button:hover {
-  background-color: #19567c;
-  transition: 0.4s;
 }
 
 /*comments for parent style starts here*/
@@ -1015,9 +786,6 @@ border-radius: 10px;
   font-family: 'Poppins', sans-serif;
   background-color: #f4f4f4;
 }
-
-
-
 
 /*manage-teachers style starts here*/
 .teacher-management {
