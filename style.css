@@ -11,8 +11,6 @@ html, body {
   box-sizing: border-box;
 }
 
-
-
 /* Sign in style starts here */
 .signin-section {
   background-color: #E8E8E8;
@@ -111,96 +109,6 @@ html, body {
   
 /*Sign in style ends here*/
 
-
-
-
-/* sign up style starts here */
-.signup-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #E8E8E8;
-  }
-  
-  .container {
-    background-color: transparent;
-    padding: 30px 40px;
-    border-radius: 10px;
-    width: 350px;
-  }
-  
-  .title {
-    text-align: left;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  
-  .logo {
-    width: 125px;
-    margin: 10px auto 20px; 
-    display: block;
-  }
-  
-  
-  .form {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  label {
-    text-align: left;
-    font-size: 14px;
-  }
-  
-  input, select {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #375E7A;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: medium;
-  }
-  
-  button:hover {
-    background-color: #2f4f61;
-  }
-  
-  .login-link {
-    margin-top: 15px;
-    font-size: 13px;
-    text-align: center;
-  }
-  
-  .login-link a {
-    color: #375E7A;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  body.signup-page {
-    overflow: auto;
-    height: auto;
-  }
-/* sign up style ends here */
-
-
-
-
-
 /* dashboard style starts here */
 /* Dashboard Layout */
 body {
@@ -296,14 +204,6 @@ height: 230px;
   line-height: 2;
 }
 /*dashboard style ends here */
-
-
-
-
-
-
-
-
 
 /* sideabar style*/
 .dashboard-container {
@@ -410,155 +310,6 @@ height: 230px;
   color: #375E7A;
 }
 
-
-/* grades style starts here */
-
-.grades-section {
-  padding-top: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.grades-table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: white;
-  margin-top: 30px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.grades-table th,
-.grades-table td {
-  padding: 16px 12px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-  font-size: 14px;
-}
-
-.grades-table th {
-  background-color: #f2f2f2;
-  font-weight: 600;
-  color: #333;
-  text-align: center;
-}
-
-.grades-table tr:last-child td {
-  border-bottom: none;
-}
-
-.grades-table tbody tr:hover {
-  background-color: #f9f9f9;
-}
-
-.filters {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start; 
-  margin-bottom: 20px;
-}
-
-.filters select,
-.filters button {
-  height: 35px;
-  padding: 0 20px;
-  font-size: 14px;
-  border-radius: 5px;
-  border: none;
-  background-color: #375E7A;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: normal;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-}
-
-.filters select {
-  flex: 1; 
-}
-
-.filters button {
-  flex-grow: 0; 
-  width: 200px; 
-  cursor: pointer;
-  margin-top: 0;
-}
-
-.filters button:hover {
-  background-color: #2C4F67; 
-}
-
-.save-btn {
-  margin-top: 35px;
-  padding: 10px 40px;
-  background-color: #375E7A;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  justify-content: center;
-  align-items: center;
-}
-.modal-icon img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 10px;
-}
-
-.modal-content {
-  background-color: #375E7A !important;
-  color: white;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-  width: 300px;
-}
-.modal-content h2 {
-text-align: center;
-margin-top: -10px;
-font-weight: 500;
-}
-.modal-buttons {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.modal-buttons .yes {
-  background-color: #00B73A;
-  color: white;
-  border: none;
-  padding: 10px 50px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.modal-buttons .no {
-  background-color: #FF4B4B;
-  color: white;
-  border: none;
-  padding: 10px 50px;
-  border-radius: 8px;
-  cursor: pointer;
-}
 
 /* grades style ends here */
 
@@ -702,10 +453,6 @@ font-weight: 500;
   border-radius: 8px;
   cursor: pointer;
 }
-
-
-
-
 
 /* announcements starts here */
 .main-content {
@@ -897,30 +644,10 @@ button {
 
 }
 
-
 button:hover {
   background-color: #19567c;
   transition: 0.4s;
 }
-
-.register-text {
-  margin-top: 20px;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.register-text a {
-  color: #375E7A;
-  text-decoration: none;
-}
-
-.register-text a:hover {
-  text-decoration: underline;
-}
-
-
-
-
 
 /*comments for parent style starts here*/
 .comments-filter {
@@ -930,9 +657,7 @@ button:hover {
   margin: 2rem 2.7rem 1rem;
   flex-wrap: wrap;
   padding: 0px;
- 
 }
-
 
 .comments-filter select,
 .comments-filter button {
@@ -953,8 +678,6 @@ margin-right: 40px;
   text-align: center;
   flex: 1;
 }
-
-
 
 .comments-filter button {
   background-color:#375E7A;
@@ -1056,7 +779,9 @@ margin-right: 40px;
   width: 850px;
   height: 450px;
 }
+
 /*student-grades for parent style ends here*/
+
 /* director-dashboard starts here */
 body {
   font-family: 'Poppins', sans-serif;
@@ -1184,9 +909,6 @@ html, body {
   color: #375E7A;
 }
 
-
-
-
 .cards {
   display: flex;
   gap: 20px;
@@ -1244,13 +966,13 @@ html, body {
 .dashboard-bottom {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap; /* Lejon që përmbajtja të kalojë në rreshtin tjetër */
+  flex-wrap: wrap; 
   overflow-x: hidden;
 }
 
 .chart, .notifications {
-min-width: 300px; /* Siguron që në ekran të ngushtë të mos thyhen */
-flex: 1 1 300px;   /* Përshtaten sipas hapësirës */
+min-width: 300px; 
+flex: 1 1 300px;   
 box-sizing: border-box;
 border: 1px solid #ddd;
 border-radius: 10px;
@@ -1268,7 +990,7 @@ border-radius: 10px;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 15px;
-  color: #2c3e50; /* pak më e errët se #333 për elegancë */
+  color: #2c3e50; 
   letter-spacing: 0.3px;
   padding-left: 30px;
 }
@@ -1565,7 +1287,7 @@ height: 230px;
 }
 
 .shto-nxenes-btn:hover {
-  background-color: #345e75; /* efekt hover */
+  background-color: #345e75; 
 }
 
 .dropdown-wrapper {
@@ -1683,20 +1405,12 @@ height: 230px;
 /* parent announcements style ends here */
 
 /* director-class&grades style starts here */
-
-
-
-
-
-
-
-
 /*manage classes&subjects style starts here*/
 .content-section {
   display: flex;
   gap: 40px;
   padding: 10px;
-  flex-wrap: wrap;  /* Siguron që seksionet të bëhen responsive */
+  flex-wrap: wrap;  
 }
 .content-wrapper{
   padding: 10px;
@@ -1726,9 +1440,9 @@ height: 230px;
 
 .button-container {
   display: flex;
-  gap: 340px;  /* Ndrysho hapësirën për butonat */
+  gap: 340px;  
   justify-content: flex-start;
-  flex-wrap: wrap;  /* Siguron që butonët të rreshtohen në mënyrë të përshtatshme */
+  flex-wrap: wrap; 
 }
 
 .table-container {
@@ -1822,4 +1536,64 @@ height: 230px;
 
 .close-btn:hover {
   color: #2b5d85;
+}
+
+/* add grades teacher role */
+.modal-grades {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+.modal-content-grades {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px; 
+  width: 100%;
+  max-width: 380px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', sans-serif;
+}
+
+.close-grades {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, select {
+  padding: 6px;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.submit-btn {
+  margin-top: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
 }

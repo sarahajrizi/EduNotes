@@ -56,3 +56,23 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("noticeFormModal").classList.add("hidden");
     }
   });
+
+  function openGradeModal() {
+      document.getElementById("modal-grades").style.display = "block";
+    }
+
+    function closeGradeModal() {
+      document.getElementById("modal-grades").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById("modal-grades");
+      if (event.target === modal) {
+        closeGradeModal();
+      }
+    }
+
+    function submitGrades() {
+      alert("Nota u ruajt! (vetëm në front për testim)");
+      closeGradeModal();
+    }
