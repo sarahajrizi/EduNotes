@@ -1,29 +1,4 @@
-
-// grades Popup Modal
-document.addEventListener("DOMContentLoaded", () => {
-  const openModalBtn = document.getElementById("openModalBtn");
-  const modal = document.getElementById("confirmationModal");
-  const cancelBtn = document.querySelector(".custom-modal-actions .btn-cancel");
-  const confirmBtn = document.querySelector(".custom-modal-actions .btn-confirm");
-
-  modal.style.display = "none";
-
-  openModalBtn.addEventListener("click", () => {
-    modal.style.display = "flex";
-  });
-
-  cancelBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-
-  confirmBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-    alert("Të dhënat u ruajtën me sukses!");
-  });
-});
-
-
-  // Add event listener to the "Add Notice" button
+// Add event listener to the "Add Notice" button
   document.getElementById("newNoticeBtn").addEventListener("click", () => {
     document.getElementById("noticeFormModal").classList.remove("hidden");
   });
@@ -57,22 +32,40 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  function openGradeModal() {
-      document.getElementById("modal-grades").style.display = "block";
-    }
+//grades modal
 
-    function closeGradeModal() {
+function openGradeModal() {
+      document.getElementById("modal-grades").style.display = "block";
+  }
+
+function closeGradeModal() {
       document.getElementById("modal-grades").style.display = "none";
     }
 
-    window.onclick = function(event) {
+window.onclick = function(event) {
       const modal = document.getElementById("modal-grades");
       if (event.target === modal) {
         closeGradeModal();
       }
-    }
+}
 
-    function submitGrades() {
+function submitGrades() {
       alert("Nota u ruajt! (vetëm në front për testim)");
       closeGradeModal();
+}
+
+//comments modal
+
+function openCommentModal() {
+      document.getElementById("modal-comments").style.display = "block";
     }
+    
+    function closeCommentModal() {
+      document.getElementById("modal-comments").style.display = "none";
+    }
+    
+    function submitComment() {
+      alert("Koment u ruajt! (Vetëm në frontend për testim)");
+      closeCommentModal();
+}
+    
