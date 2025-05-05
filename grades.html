@@ -43,81 +43,51 @@
       <div class="dashboard-topbar">
         <h2>EduNotes</h2>
         <div>
-          <span>Përshendetje znj. Albana!</span>
+          <span>Përshendetje Albana!</span>
           <a href="signin.html">⇦ Dil</a>
         </div>
+        
       </div>
 
-      <div class="grades-section">
-        <div class="filters">
-          <select>
-            <option>Zgjidh klasën</option>
-            <option>Klasa 1</option>
-            <option>Klasa 2</option>
-          </select>
-      
-          <select>
-            <option>Zgjidh lëndën</option>
-            <option>Gjuhë Shqipe</option>
-            <option>Matematikë</option>
-          </select>
-      
-          <button class="show-button">Shfaq</button>
+      <button onclick="openGradeModal()" style="margin: 20px; padding: 10px 20px;">Shto Notë</button>
+      <div id="modal-grades" class="modal-grades">
+        <div class="modal-content-grades">
+          <span class="close-grades" onclick="closeGradeModal()">&times;</span>
+          <h2>Shto Notë për Nxënësin</h2>
+          <form>
+            <label for="nxenesi">Nxënësi:</label>
+            <select id="nxenesi" name="nxenesi">
+              <option value="1">Ardit Krasniqi</option>
+              <option value="2">Erza Hoxha</option>
+            </select>
+  
+            <label for="lenda">Lënda:</label>
+            <select id="lenda" name="lenda">
+              <option value="1">Matematikë</option>
+              <option value="2">Gjuhë Shqipe</option>
+            </select>
+
+            <label for="periudha">Periudha:</label>
+            <select id="periudha" name="periudha">
+              <option value="Periudha 1">Periudha 1</option>
+              <option value="Periudha 2">Periudha 2</option>
+            </select>
+
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="nota1" name="nota1" min="1" max="5">
+  
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" name="nota2" min="1" max="5">
+  
+            <label for="nota_p">Nota Përfundimtare:</label>
+            <input type="number" id="nota_p" name="nota_p" min="1" max="5">
+  
+            <button type="button" id="submitGradesBtn" class="submit-btn" onclick="submitGrades()">Ruaj Notën</button>
+          </form>
         </div>
-      
-        <table class="grades-table">
-          <thead>
-            <tr>
-              <th>Emri</th>
-              <th>Gjuhë Shqipe</th>
-              <th>Nota 1</th>
-              <th>Nota 2</th>
-              <th>Nota Përfundimtare</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Blendi Gashi</td>
-              <td>4</td>
-              <td>5</td>
-              <td>4</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>Arta Berisha</td>
-              <td>4</td>
-              <td>4</td>
-              <td>4</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>Ela Veseli</td>
-              <td>5</td>
-              <td>5</td>
-              <td>5</td>
-              <td>5</td>
-            </tr>
-          </tbody>
-        </table>
-      
-        <button id="openModalBtn" class="save-btn">Ruaj</button>
       </div>
 
-      <!-- Popup Modal -->
-      <div id="confirmationModal" class="custom-modal">
-        <div class="custom-modal-content">
-          <div class="custom-modal-icon">
-            <img src="img/alert.png" alt="Alert" />
-          </div>
-          <h2>Vëmendje!</h2>
-          <p>Jeni të sigurt që dëshironi t’i ruani të dhënat?</p>
-          <div class="custom-modal-actions">
-            <button class="btn-confirm">PO</button>
-            <button class="btn-cancel">JO</button>
-          </div>
-        </div>
-      </div>
-      
+
     </div>
   </div>
   <script src="script.js"></script>
