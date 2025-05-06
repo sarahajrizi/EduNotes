@@ -998,7 +998,7 @@ border-radius: 10px;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 15px;
-  color: #2c3e50; /* pak më e errët se #333 për elegancë */
+  color: #2c3e50; 
   letter-spacing: 0.3px;
   padding-left: 30px;
 }
@@ -1752,7 +1752,6 @@ input, select {
   z-index: 1000;
 }
 
-.open-comment-btn
 .modal-content-comments {
   background-color: #fff;
   position: absolute;
@@ -1764,6 +1763,11 @@ input, select {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   font-family: 'Poppins', sans-serif;
+}
+
+.open-comment-btn{
+  margin-top: 30px;
+  margin-left: 40px;
 }
 
 .modal-content-comments label {
